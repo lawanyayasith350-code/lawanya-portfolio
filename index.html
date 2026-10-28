@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lawanya Yasith Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,7 +14,7 @@
     <nav class="nav">
       <a href="#" class="logo">Lawanya Yasith</a>
 
-      <button class="menu-btn" id="menuBtn">☰</button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false">☰</button>
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
@@ -26,9 +29,12 @@
   <main>
     <!-- Hero -->
     <section class="hero">
+      <div class="hero-photo">
+        <img src="hero-lawanya.png" alt="Lawanya Yasath" width="900" height="1100" fetchpriority="high" />
+      </div>
       <div class="hero-content">
         <p class="badge">IT Engineer Portfolio</p>
-        <h1>ラワンヤ ヤサト</h1>
+        <h1>Lawanya Yasath</h1>
         <h2>Web Development / Java / SQL / Cloud Deployment</h2>
         <p class="hero-text">
           専門学校でITを学びながら、WebサイトやWebアプリを個人で制作しています。
@@ -71,37 +77,37 @@
       <div class="skills-grid">
         <div class="skill-card">
           <h3>Frontend</h3>
-          <p>HTML / CSS / JavaScript</p>
+          <p class="skill-names"><span class="skill-name"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 3h16l-1.5 17L12 22l-6.5-2Z"/><path d="M16 7H8l.5 5H15l-.4 4-2.6.8-2.6-.8-.2-2"/></svg><span>HTML</span></span> / <span class="skill-name"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 3h16l-1.5 17L12 22l-6.5-2Z"/><path d="M8 7h8l-1 9-3 1-3-1-.2-2M8.5 11h7"/></svg><span>CSS</span></span> / <span class="skill-name"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M11 9v7a2 2 0 0 1-4 0m10-6c-3-2-4 2-1 3s2 5-1 4l-1-.5"/></svg><span>JavaScript</span></span></p>
           <span>Webサイト・Webアプリ制作で使用</span>
         </div>
 
         <div class="skill-card">
           <h3>Backend</h3>
-          <p>Node.js / Express</p>
+          <p class="skill-names"><span class="skill-name"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2 9 5v10l-9 5-9-5V7Z"/><path d="M8 15V9l8 6V9"/></svg><span>Node.js</span></span> / <span class="skill-name"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 10c0-5-9-5-9 1v2c0 5 8 5 9 2M3 11h9m3-4 6 10m0-10-6 10"/></svg><span>Express</span></span></p>
           <span>REST API作成で使用</span>
         </div>
 
         <div class="skill-card">
           <h3>Database</h3>
-          <p>SQLite / SQL</p>
+          <p class="skill-names"><span class="skill-name"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/></svg><span>SQLite</span></span> / <span class="skill-name"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/></svg><span>SQL</span></span></p>
           <span>データ保存・取得で使用</span>
         </div>
 
         <div class="skill-card">
           <h3>Tools</h3>
-          <p>Git / GitHub / Netlify / Render</p>
+          <p class="skill-names"><span class="skill-name"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2 10 10-10 10L2 12Z"/><path d="m8 6 8 8m-5-5v8"/><circle cx="11" cy="17" r="1.5"/><circle cx="16" cy="14" r="1.5"/></svg><span>Git</span></span> / <span class="skill-name"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 20c-4 1-4-2-6-2m14 4v-4c0-1-.3-2-1-2 4-.5 6-2 6-6 0-1-.5-3-2-4 0-1 0-2-.5-3-2 0-3 1-3 1-3-1-5-1-8 0 0 0-1-1-3-1-.5 1-.5 2-.5 3C3.5 7 3 9 3 10c0 4 2 5.5 6 6-.7.5-1 1-1 2v4"/></svg><span>GitHub</span></span> / <span class="skill-name"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 3 9 9-9 9-9-9ZM2 12h7m6 0h7M12 2v6m0 8v6M7 7l10 10"/></svg><span>Netlify</span></span> / <span class="skill-name"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 21V3h7a6 6 0 0 1 0 12H8m5 0 7 6"/><circle cx="11" cy="9" r="2"/></svg><span>Render</span></span></p>
           <span>コード管理・デプロイで使用</span>
         </div>
 
         <div class="skill-card">
           <h3>School Learning</h3>
-          <p>Java / CAD / IT Passport</p>
+          <p class="skill-names"><span class="skill-name"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 13h12v4c0 5-12 5-12 0Zm12 0h2c4 0 4 5-2 5M8 9c-4-3 6-4 2-7m4 8c-4-3 6-4 2-7M3 23h18"/></svg><span>Java</span></span> / <span class="skill-name"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 21 8-18 10 18Zm3-6h12M11 3v18"/></svg><span>CAD</span></span> / <span class="skill-name"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8" cy="10" r="2"/><path d="M5 16c0-4 6-4 6 0m3-7h4m-4 4h4m-4 4h3"/></svg><span>IT Passport</span></span></p>
           <span>専門学校で学習中</span>
         </div>
 
         <div class="skill-card">
           <h3>Japanese</h3>
-          <p>JLPT N2</p>
+          <p class="skill-names"><span class="skill-name"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 5h12M9 2v3M5 5c0 6 4 9 9 11M13 5c0 6-4 9-10 11m10 5 4-11 4 11m-6-4h4"/></svg><span>JLPT N2</span></span></p>
           <span>日本語での基本的な業務コミュニケーション</span>
         </div>
       </div>
@@ -215,21 +221,25 @@
 
       <div class="learning-list">
         <div class="learning-item">
+          <div class="learning-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="9" r="6"/><path d="m8 14-1 8 5-3 5 3-1-8M9 9l2 2 4-4"/></svg></div>
           <h3>J検 情報活用試験 3級</h3>
-          <p>合格：94点</p>
+          <p class="learning-score" aria-label="合格：94点"><span aria-hidden="true">合格：<span class="score-value" data-score="94">94</span>点</span></p>
         </div>
 
         <div class="learning-item">
+          <div class="learning-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M6 3h12v18l-6-3-6 3Z"/><path d="m9 10 2 2 4-4"/></svg></div>
           <h3>JLPT N2</h3>
-          <p>合格：104点</p>
+          <p class="learning-score" aria-label="合格：104点"><span aria-hidden="true">合格：<span class="score-value" data-score="104">104</span>点</span></p>
         </div>
 
         <div class="learning-item">
+          <div class="learning-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 6C8 3 5 3 2 4v15c4-1 7 0 10 2 3-2 6-3 10-2V4c-3-1-6-1-10 2Zm0 0v15"/></svg></div>
           <h3>ITパスポート</h3>
           <p>取得に向けて学習中</p>
         </div>
 
         <div class="learning-item">
+          <div class="learning-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="2" y="3" width="20" height="15" rx="2"/><path d="m8 8-3 3 3 3m8-6 3 3-3 3m-5 5-1 4m4-4 1 4M7 22h10"/></svg></div>
           <h3>専門学校での学習</h3>
           <p>Java / SQL / CAD / Word / Excel / PowerPoint</p>
         </div>
@@ -249,8 +259,14 @@
         </p>
 
         <div class="contact-links">
-          <a href="mailto:lawanyayasith352@gmail.com">Email</a>
-          <a href="https://github.com/lawanyayasith350-code" target="_blank">GitHub</a>
+          <a class="contact-method" href="mailto:lawanyayasith352@gmail.com">
+            <span class="contact-method-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></span>
+            <span class="contact-method-details"><span class="contact-method-label">Email</span><span class="contact-method-value">lawanyayasith352@gmail.com</span></span>
+          </a>
+          <a class="contact-method" href="tel:07020354410">
+            <span class="contact-method-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m7 3 3 5-2 2c1 3 3 5 6 6l2-2 5 3c0 3-2 5-5 4C9 19 5 15 3 8 2 5 4 3 7 3Z"/></svg></span>
+            <span class="contact-method-details"><span class="contact-method-label">Phone</span><span class="contact-method-value">07020354410</span></span>
+          </a>
         </div>
       </div>
     </section>
